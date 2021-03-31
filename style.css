@@ -3,7 +3,9 @@
     CS52 
     3/30/21
 
-    Special feature: the box enlarges on hover
+    Special feature: the box enlarges on hover.
+
+    Used css-tricks.com and w3schools.com for refreshers on individual css things
 */
 
 body {
@@ -15,6 +17,8 @@ body {
 
     background-color: rgb(245, 245, 245);
 
+    /* adopted from https://www.w3schools.com/css/css3_flexbox_container.asp */
+    /* used as more of a quick refresh */
     display: flex;
     flex-direction: column;
     justify-content: center;
