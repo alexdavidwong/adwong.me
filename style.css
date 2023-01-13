@@ -1,60 +1,110 @@
 /*
     Alex Wong
-    CS52 
-    3/30/21
+    Personal portfolio site
 
     Special feature: the box enlarges on hover.
-
     Used css-tricks.com and w3schools.com for refreshers on individual css things
 */
 
+:root {
+    --primary-gradient: linear-gradient(45deg, #6BEFB0, #63C7FF);;
+    --active-gradient: linear-gradient(45deg,#1D7249, #005F94);
+    --background-gradient: linear-gradient(45deg,#1D1D1D, #090909);
+    --text-primary-color: #fff;
+}
+
 body {
-    padding: 0;
     margin: 0;
+    padding: 0;
+
+    padding-top: 10vh;
 
     width: 100vw;
     height: 100vh;
 
-    background-color: rgb(245, 245, 245);
+    background-image: var(--background-gradient);
 
     /* adopted from https://www.w3schools.com/css/css3_flexbox_container.asp */
     /* used as more of a quick refresh */
+   
     display: flex;
     flex-direction: column;
-    justify-content: center;
-}
-
-h1 {
-    font-family: 'Pacifico', cursive;
-    color: rgb(134, 197, 255);
-    font-size: 100px;
-    margin: 0;
+    align-items: center;
 }
 
 p {
-    font-size: 30px;
+    color: var(--text-primary-color);
+    font-size: 1.5vw;
+}
+
+h1, h2{
     font-family: 'Montserrat', sans-serif;
-    line-height: 150%;
+    font-size: 7vw;
+    background: var(--primary-gradient);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 5vw;
+}
+
+h3 {
+    color: var(--text-primary-color);
+    font-size: 3vw;
+
+    margin: 0;
+    padding: 0;
 }
 
 .bio {
-    margin: auto;
-    width: 50%;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
 
-    background-color: #fff;
-    border: 5px solid rgb(134, 197, 255);
-    border-radius: 20px;
-    padding: 30px;
-
-    /* adopted from https://css-tricks.com/different-transitions-for-hover-on-hover-off/ */
-    /* used as more of a quick refresh */
-    transition: all 1s;
+    width: 68%;
 }
 
-.bio:hover {
-    transform: scale(1.05); 
+.project-items-container {
+
 }
+
+.project-name {
+    width: 30%;
+}
+
+.project-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+
+    padding: 1vw;
+
+    border: 3px solid #63C7FF;
+    border-radius: 20px; 
+}
+
+.project-item:hover {
+    background-image: var(--active-gradient);
+}
+
+.item-description-container {
+    width: 100%;
+}
+
+.software-used-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+
 
 
 
