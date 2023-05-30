@@ -1,15 +1,12 @@
 /*
     Alex Wong
     Personal portfolio site
-
-    Special feature: the box enlarges on hover.
-    Used css-tricks.com and w3schools.com for refreshers on individual css things
 */
 
 :root {
     --primary-gradient: linear-gradient(45deg, #6BEFB0, #63C7FF);;
-    --active-gradient: linear-gradient(45deg,#1D7249, #005F94);
-    --background-gradient: linear-gradient(45deg,#1D1D1D, #090909);
+    --active-gradient: linear-gradient(45deg,#25b16d, #1c98da);
+    --background-gradient: #090909;
     --text-primary-color: #fff;
 }
 
@@ -22,10 +19,8 @@ body {
     width: 100vw;
     height: 100vh;
 
-    background-image: var(--background-gradient);
-
-    /* adopted from https://www.w3schools.com/css/css3_flexbox_container.asp */
-    /* used as more of a quick refresh */
+    /*background-image: var(--background-gradient);*/
+    background-color: #090909;
    
     display: flex;
     flex-direction: column;
@@ -35,11 +30,12 @@ body {
 p {
     color: var(--text-primary-color);
     font-size: 1.5vw;
+    font-family: 'Montserrat', sans-serif;
 }
 
 h1, h2{
     font-family: 'Montserrat', sans-serif;
-    font-size: 7vw;
+    font-size: 6vw;
     background: var(--primary-gradient);
     background-clip: text;
     -webkit-background-clip: text;
@@ -50,59 +46,111 @@ h1, h2{
 }
 
 h2 {
-    font-size: 5vw;
+    font-size: vw;
+    margin-bottom: 1vh;
 }
 
 h3 {
     color: var(--text-primary-color);
     font-size: 3vw;
 
+    font-family: 'Montserrat', 'sans-serif';
+
     margin: 0;
     padding: 0;
 }
 
-.bio {
+section {
+    position:relative;
+    width: 90%;
+    margin-bottom: 2vw;
+    padding: 30px;
+
+    z-index: 2;
+}
+
+a {
+    color:#6BEFB0;
+    text-decoration: none;
+    transition: 2s;
+}
+
+.button {
+    position: relative;
+    border: none;
     display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    
+    width: 15%;
+    height: 3vh;
 
-    width: 68%;
+    border: 2px solid #6eeefc;
+    border-radius: 10px;
+
+    margin-top: 1vh;
+
+    transition: 0.7s;
+    z-index: 1;
 }
 
-.project-items-container {
-
+.button:hover {
+    background-color: #1caefd;
 }
 
-.project-name {
-    width: 30%;
+.description {
+    font-size: 20px;
+    margin-top: 0.5vh;
+    margin-bottom: 0.5vh;
+}
+
+.section-title {
+    margin-bottom: 20px;
 }
 
 .project-item {
     display: flex;
-    flex-direction: row;
-    align-items: center; 
+    align-items: left; 
+    flex-direction: column;
 
-    padding: 1vw;
+    padding: 5vw;
+    margin-bottom: 5vh;
 
-    border: 3px solid #63C7FF;
+    border: 3px solid #6eeefc;
     border-radius: 20px; 
+
+    transition: all 0.7s;
+
+    background-image: var(--active-gradient);
+    opacity: 0.8;
 }
 
 .project-item:hover {
-    background-image: var(--active-gradient);
+    box-shadow: 0px 0px 40px 2px rgba(122, 251, 193, 0.767);
+    transform: scale(1.02);
+    opacity: 1;
+}
+
+.project-item h2 {
+    margin-bottom: 0.5vh;
 }
 
 .item-description-container {
     width: 100%;
 }
 
-.software-used-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.section-title {
+    margin-bottom: 4vh;
 }
 
+#bio {
+    font-family: 'Pacifico', 'san serif';
+    margin-bottom: 0;
+}
+
+#bio-description {
+
+}
 
 
 

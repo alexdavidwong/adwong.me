@@ -1,6 +1,6 @@
 <!--
     Alex Wong
-    Personal Website
+    Personal Portfolio Website
 -->
 
 <!DOCTYPE html>
@@ -15,138 +15,87 @@
     </head>
     <body>
 
-        <div class="bio">
-            <h3>hello</h3>
-            <h1>I'm Alex Wong</h1>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco.      
-            </p>
-        </div>
+        <!--Bio-->
+        <section>
+            <h1 class="section-title" id="bio">Hello, I'm Alex!</h1>
+            <h3 id="bio-description">I'm a proud Dartmouth alum who is passionate about using technology and the arts to engineer immersive experiences</h3>
+        </section>
 
-        <div class="bio">
-            <h2>dev projects</h2> 
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            </p>
-        </div>
-
-        <div class="bio project-items-container">
+        <!--Project Highlights-->
+        <section>
+            <h1 class="section-title">Selected Works</h1>
+            
+            <div class="project-item">
+                <h2>Macro</h2>
+                <p class="description">Created composable elements using React Native and Redux to display past meals and query relevant recipes from Spoonacular database displaying needed ingredients and steps 
+                    Synthesized feedback from usability tests and updated interface (layout, design elements) to improve user experience 
+                    Led the iterative design process creating wireframes testing user flows and a design system for the app
+                    </p>
+                    <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
 
             <div class="project-item">
-
-                <h3 class="project-name">project one</h3>
-
-                <div class="item-description-container">
-
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud
+                <h2>SilVR</h2>
+                <p class="description">Spearheaded effort to create and implement vector assets in Unity to increase consistency of design language 
+                    Animated menu screen assets in Unity to provide responsive animations on specific user action 
+                    Developed wireframes of user scenes and user flow in Figma to increase clarity of visual cues to guide users
+                    Iterated design elements with project leadership, incorporated feedback and created figural motifs used throughout UI
                     </p>
-
-                    <div class="software-used-container">
-
-                        <p>lang</p>
-                        <p>lang</p>
-                        <p>lang</p>
-
-                    </div>
-                </div>
+                    <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
             </div>
-        </div>
-
-            
-        <!--
-
-        <section class="resume-content" id="coding-projects">
-
-            
-
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in 
-                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-            </p>
-
-            <div class="project-items-container">
-
-                <div class="project-item">
-
-                    <h3>project one</h3>
-
-                    <div class="item-description-container">
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud
-                        </p>
-
-                        <div class="software-used-container">
-
-                            <p>lang</p>
-                            <p>lang</p>
-                            <p>lang</p>
-
-                        </div>
-                        
-
-                    </div>
-
-                </div>
-
-                <div class="project-item">
-
-                    <h3>project two</h3>
-
-                    <div class="item-description-container">
-
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud
-                        </p>
-
-                        <div class="software-used-container">
-
-                            <p>lang</p>
-                            <p>lang</p>
-                            <p>lang</p>
-
-                        </div>
-                        
-
-                    </div>
-
-                </div>
-
-                <div class="project-item">
-
-                    <h3>project two</h3>
-
-                    <div class="item-description-container">
-
-                        <p1>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                            Ut enim ad minim veniam, quis nostrud
-                        </p1>
-
-                        <div class="software-used-container">
-
-                            <p2>lang</p2>
-                            <p2>lang</p2>
-                            <p2>lang</p2>
-
-                        </div>
-                        
-
-                    </div>
-
-                </div>
-
-            </div>
-
         </section>
-        -->
+
+
+        <!--Other Work Samples-->
+        <section>
+            <h1 class="section-title">Other Work Samples</h1>
+
+            <div class="project-item">
+                <h2>Project Zephyrus</h2>
+                <p class="description">Created 3D data visualization of wind patterns in VR and implemented UI components with haptic feedback animations and interactive onboarding screens </p>
+                <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
+
+            <div class="project-item">
+                <h2>AR Stock App</h2>
+                <p class="description">Created AR stock visualization using Vuforia library to query and display real time stock information </p>
+                <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
+
+            <div class="project-item">
+                <h2>Blog Platform Frontend</h2>
+                <p class="description">project description</p>
+                <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
+
+            <div class="project-item">
+                <h2>Notes Web App</h2>
+                <p class="description">project description</p>
+                <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
+
+            <div class="project-item">
+                <h2>Mini Search Engine</h2>
+                <p class="description">Coded a mini search engine in C that indexes and queries sites storing and retrieving sites related links </p>
+                <a href="https://github.com/dartmouth-cs52-21S/platform-client-alexdavidwong" class="button"> see code base </a>
+            </div>
+        </section>
+
+        <!--Personal Projects-->
+        <section>
+            <h1 class="section-title">Passion Projects</h1>
+
+            <div class="project-item">
+                <h2>Musings of Foolishness</h2>
+                <p1>project link</p1>
+                <p class="description">project description</p>
+            </div>
+
+            <div class="project-item">
+                <h2>Life at the Museum</h2>
+                <p1>project link</p1>
+                <p class="description">project description</p>
+            </div>
+        </section>  
     </body>
 </html>
